@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="main.css" />
     <title>Accessible Design Co.</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="flex-container">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
@@ -17,29 +17,33 @@
         </ul>
       </nav>
       <section id="hero">
-        <h1>Accessible Design Co.</h1>
-        <img
-          src="./img/hero.jpg"
-          alt="Three people sit around a table, one in a wheelchair."
-          id="hero-img" />
-        <a href="#about"><button>Learn More!</button></a>
+        <div>
+          <!-- <div>
+            <img src="./img/hero.jpg" alt="" />
+          </div> -->
+          <div>
+            <h1>Accessible Design Co.</h1>
+            <p class="prompt">Ready to take your accessible web presence to the next level?</p>
+            <a href="#about"><button id="lets-go">Let's go!</button></a>
+          </div>
+        </div>
       </section>
     </header>
     <main>
       <section id="about">
         <h2>About Us</h2>
-        <p>
+        <p class="about-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nulla
           eos nostrum voluptate expedita, quia porro nisi autem dolores soluta,
           eius sunt pariatur natus omnis quas temporibus rem totam sapiente!
         </p>
-        <p>
+        <p class="about-p">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
           deleniti eius ea illum, repudiandae cupiditate perferendis atque
           magnam assumenda molestias sapiente, eveniet harum velit temporibus
           aliquam, obcaecati quae omnis magni.
         </p>
-        <p>
+        <p class="about-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias
           totam tempora neque laborum dicta culpa quae quos aut recusandae
           maiores blanditiis, earum vel repellendus dignissimos ipsum beatae
@@ -48,94 +52,112 @@
       </section>
       <section id="services">
         <h2>Our Services</h2>
-        <h3>Responsive, Accessible Website Design</h3>
-        <img src="./img/world-wide-web.png" alt="Wireframe representation of the earth." />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum
-          aliquid quod commodi inventore dignissimos itaque rem cum dolore,
-          cupiditate est eaque architecto consequatur sapiente dolorem
-          praesentium vel, ex minima.
-        </p>
-        <h3>Consultation &amp; Training</h3>
-        <img src="./img/teacher.png" alt="A teacher teaching a class." />
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-          asperiores amet accusantium, quas explicabo eveniet nesciunt enim
-          consequuntur. Aperiam dicta laborum perferendis aliquid eos quo cumque
-          reiciendis officia quae libero.
-        </p>
-        <h3>Merchandise</h3>
-        <img src="./img/shop.png" alt="A storefront." />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam
-          amet commodi dolores a dolorum cupiditate, labore aliquid debitis
-          itaque esse aspernatur laboriosam magni pariatur porro officia. Rem,
-          eligendi veniam?
-        </p>
+        <div class="flex-container space-between">
+          <div class="services-card">
+            <div class="services-icon">
+              <img
+                class="center"
+                src="./img/world-wide-web.png"
+                alt="Wireframe representation of the earth." />
+            </div>
+            <h3>Accessible Websites</h3>
+            <p class="justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              rerum aliquid quod commodi inventore dignissimos itaque rem cum
+              dolore, cupiditate est eaque architecto consequatur sapiente
+              dolorem praesentium vel, ex minima.
+            </p>
+          </div>
+          <div class="services-card">
+            <div class="services-icon">
+              <img
+                class="center"
+                src="./img/teacher.png"
+                alt="A teacher teaching a class." />
+            </div>
+            <h3>Consultation &amp; Training</h3>
+            <p class="justify">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+              asperiores amet accusantium, quas explicabo eveniet nesciunt enim
+              consequuntur. Aperiam dicta laborum perferendis aliquid eos quo
+              cumque reiciendis officia quae libero.
+            </p>
+          </div>
+          <div class="services-card">
+            <div class="services-icon">
+              <img class="center" src="./img/shop.png" alt="A storefront." />
+            </div>
+
+            <h3>Merchandise</h3>
+            <p class="justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              aliquam amet commodi dolores a dolorum cupiditate, labore aliquid
+              debitis itaque esse aspernatur laboriosam magni pariatur porro
+              officia. Rem, eligendi veniam?
+            </p>
+          </div>
+        </div>
       </section>
       <section id="contact">
         <h2>Contact Us</h2>
-        <p>We'd be delighted to hear from you.</p>
+        <p class="center">We'd be delighted to hear from you.</p>
         <form action="post">
-          <fieldset>
-            <legend>Get in touch!</legend>
-            <label for="name">Name:</label>
+          <label for="name">Name:</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Jane Smith"
+            required />
+          <br /><br />
+          <label for="email">Email:</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="jane@smith.com"
+            aria-describedby="email-help"
+            required />
+          <br />
+          <small id="email-help">Your email address is safe with us.</small>
+          <br /><br />
+          <label for="subject">Subject:</label>
+          <br />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="I'd like to schedule an appointment"
+            required />
+          <br /><br />
+          <label for="message">Message:</label>
+          <br />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Hello! I'd like to book an appointment, please."
+            required></textarea>
+          <br />
+          <fieldset class="newsletter">
+            <legend>Subscribe to our newsletter?</legend>
+            <input
+              type="radio"
+              name="newsletter"
+              id="newsletter-yes"
+              value="yes" />
+            <label for="newsletter-yes">Yes!</label>
             <br />
             <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Jane Smith"
-              required />
-            <br /><br />
-            <label for="email">Email:</label>
-            <br />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="jane@smith.com"
-              aria-describedby="email-help"
-              required />
-            <br />
-            <small id="email-help">Your email address is safe with us.</small>
-            <br /><br />
-            <label for="subject">Subject:</label>
-            <br />
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="I'd like to schedule an appointment"
-              required />
-            <br /><br />
-            <label for="message">Message:</label>
-            <br />
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Hello! I'd like to book an appointment, please."
-              required></textarea>
-            <br /><br />
-            <fieldset>
-              <legend>Subscribe to our newsletter?</legend>
-              <input
-                type="radio"
-                name="newsletter"
-                id="newsletter-yes"
-                value="yes" />
-              <label for="newsletter-yes">Yes!</label>
-              <br />
-              <input
-                type="radio"
-                name="newsletter"
-                id="newsletter-no"
-                value="no" />
-              <label for="newsletter-no">No&hellip;</label>
-            </fieldset>
-            <br />
-            <input type="submit" value="Submit" />
+              type="radio"
+              name="newsletter"
+              id="newsletter-no"
+              value="no" />
+            <label for="newsletter-no">No&hellip;</label>
           </fieldset>
+          <br />
+          <input type="submit" value="Submit" />
         </form>
       </section>
     </main>
