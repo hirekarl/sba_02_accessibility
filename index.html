@@ -1,3 +1,5 @@
+<!-- Image attributions in README.md -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,7 +29,10 @@
             <li><a href="#contact">Contact</a></li>
           </div>
         </ul>
-        <button id="hamburger-toggle" class="hamburger" aria-label="Menu Toggle">
+        <button
+          id="hamburger-toggle"
+          class="hamburger"
+          aria-label="Menu Toggle">
           <div class="svg-wrap icon-open" id="icon-open">
             <div class="icon-open">
               <svg
@@ -78,7 +83,7 @@
             <p class="prompt">
               Ready to take your accessible web projects to the next level?
             </p>
-            <a href="#about"><button id="lets-go">Let's go!</button></a>
+            <a href="#about"><button id="lets-go" role="button" aria-label="About">Let's go!</button></a>
           </div>
         </div>
       </section>
@@ -87,21 +92,22 @@
       <section id="about">
         <h2>About Us</h2>
         <p class="about-p justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nulla
-          eos nostrum voluptate expedita, quia porro nisi autem dolores soluta,
-          eius sunt pariatur natus omnis quas temporibus rem totam sapiente!
+          When Barboth arrived on The Blue Planet in the summer of
+          <date datetime="1997">1997</date>, no one knew how to make an
+          accessible website. This was really too bad, because everyone needs an
+          accessible website.
         </p>
         <p class="about-p justify">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-          deleniti eius ea illum, repudiandae cupiditate perferendis atque
-          magnam assumenda molestias sapiente, eveniet harum velit temporibus
-          aliquam, obcaecati quae omnis magni.
+          In those days, a small business was lucky to have a website at all.
+          And if they
+          <em>did</em> have a website, it probably had a horrible
+          <code>&lt;marquee&gt;</code>
+          scrolling across the page. Worst of all, hardly any of them were blue.
         </p>
         <p class="about-p justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias
-          totam tempora neque laborum dicta culpa quae quos aut recusandae
-          maiores blanditiis, earum vel repellendus dignissimos ipsum beatae
-          cupiditate at.
+          Fortunately, Barboth's craft landed in upstate New York and brought
+          the joys of accessible web design to the most important web services
+          at the time. The rest is history.
         </p>
       </section>
       <section id="services">
@@ -116,10 +122,11 @@
             </div>
             <h3>Accessible Websites</h3>
             <p class="justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              rerum aliquid quod commodi inventore dignissimos itaque rem cum
-              dolore, cupiditate est eaque architecto consequatur sapiente
-              dolorem praesentium vel, ex minima.
+              Of course, we offer the service that started it all: accessible
+              websites. In the age of the new Web, we have kept pace (and
+              exceeded) industry standards to bring you the best responsive
+              designs in the galaxy. Each design comes a satchel of Barboth's
+              crystalline tears as a seal of approval.
             </p>
           </div>
           <div class="services-card">
@@ -131,10 +138,12 @@
             </div>
             <h3>Consultation &amp; Training</h3>
             <p class="justify">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-              asperiores amet accusantium, quas explicabo eveniet nesciunt enim
-              consequuntur. Aperiam dicta laborum perferendis aliquid eos quo
-              cumque reiciendis officia quae libero.
+              As of <date datetime="2002">2002</date>, we offer our services to
+              train others in the ways of Barboth's superior designs. These
+              services aren't cheap, but Barboth's methods are as priceless as
+              the Veils of Darmongong on a light autumn afternoon. If you
+              haven't seen them, you really should check them out. We also
+              accept nontraditional payment methods.
             </p>
           </div>
           <div class="services-card">
@@ -143,10 +152,11 @@
             </div>
             <h3>Merchandise</h3>
             <p class="justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              aliquam amet commodi dolores a dolorum cupiditate, labore aliquid
-              debitis itaque esse aspernatur laboriosam magni pariatur porro
-              officia. Rem, eligendi veniam?
+              Let the humans of this sector know you are operating with the help
+              of the Almighty Borboth! T-shirts and hoodies are available in all
+              adult sizes, all in shades of blue, of course. Your enemies will
+              quake in terror, and your friends will be jealous. No children's
+              sizes at this time.
             </p>
           </div>
           <div class="services-card">
@@ -158,17 +168,17 @@
             </div>
             <h3>Technical Support</h3>
             <p class="justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              aliquam amet commodi dolores a dolorum cupiditate, labore aliquid
-              debitis itaque esse aspernatur laboriosam magni pariatur porro
-              officia. Rem, eligendi veniam?
+              Our thralls are standing by 24 hours a day, seven days a week, to
+              ensure your company's website meets Barboth's standards. Under our
+              Standard Plan, techs speak Intergalactic; human languages cost
+              extra. Praise be to the Almighty Barboth, King of Kings.
             </p>
           </div>
         </div>
       </section>
       <section id="contact">
         <h2>Contact Us</h2>
-        <p class="center">We'd be delighted to hear from you.</p>
+        <p class="center">Barboth wants to hear from you.</p>
         <form action="post" role="form" netlify>
           <label for="name">Name:</label>
           <br />
@@ -176,7 +186,7 @@
             type="text"
             name="name"
             id="name"
-            placeholder="Jane Smith"
+            placeholder="Mark McCulterson"
             required />
           <br /><br />
           <label for="email">Email:</label>
@@ -185,11 +195,13 @@
             type="email"
             name="email"
             id="email"
-            placeholder="jane@smith.com"
+            placeholder="mark@mcculterson.com"
             aria-describedby="email-help"
             required />
           <br />
-          <small id="email-help">Your email address is safe with us.</small>
+          <small id="email-help"
+            >Your email address is safe with us&hellip; <em>for now</em>.</small
+          >
           <br /><br />
           <label for="subject">Subject:</label>
           <br />
@@ -205,7 +217,7 @@
           <textarea
             name="message"
             id="message"
-            placeholder="Hello! I'd like to get in touch."
+            placeholder="Barboth the Almighty is King."
             required></textarea>
           <br />
           <fieldset class="newsletter">
@@ -225,20 +237,27 @@
             <label for="newsletter-no">No&hellip;</label>
           </fieldset>
           <br />
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit to Barboth" />
         </form>
       </section>
     </main>
     <footer>
       <div class="social-icons">
         <div class="social-icon">
-          <a href="#"><img src="./img/facebook-app-symbol.png" alt="Facebook symbol."></a>
+          <a href="#" aria-label="Facebook"
+            ><img src="./img/facebook-app-symbol.png" alt="Facebook symbol."
+          /></a>
         </div>
         <div class="social-icon">
-          <a href="#"><img src="./img/instagram.png" alt="Instagram symbol."></a>
+          <a href="#" aria-label="Instagram"
+            ><img src="./img/instagram.png" alt="Instagram symbol."
+          /></a>
         </div>
       </div>
-      <small>Copyright &copy; 2025 Accessible Design Co.<br />A subsidiary of Cult of Barboth, Ltd.</small>
+      <small
+        >Copyright &copy; 2025 Accessible Design Co.<br />A subsidiary of Cult
+        of Barboth, Ltd.</small
+      >
     </footer>
     <script src="./static/js/app.js"></script>
   </body>
