@@ -10,7 +10,7 @@
 For this Skills-Based Assessment, you will demonstrate your ability to create a well-structured, responsive, and accessible web page using the HTML and CSS techniques you have learned. You will be assessed on your use of semantic HTML, CSS layout techniques (including Flexbox and Grid), and the implementation of accessibility features. ([Read complete instructions](https://ps-lms.vercel.app/curriculum/se/410/sba))
 
 ## Deployment
-`index.html` is deployed at [](). The form works.
+Project is deployed at [meek-pie-765715.netlify.app](https://meek-pie-765715.netlify.app/). The form works.
 
 ## Attributions
 - Responsive navbar inspired by [Responsive navbar with mobile hamburger menu | HTML, CSS, JS](https://www.youtube.com/watch?v=FNXgsTFrD7U) by [Devistry](https://www.youtube.com/@Devistry)
