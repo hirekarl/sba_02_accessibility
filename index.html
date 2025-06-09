@@ -3,14 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Homepage for Accessible Design Co., where accessible, responsive design becomes possible." />
+    <meta name="author" content="Karl Johnson" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="./img/accessibility.png" type="image/x-icon" />
     <title>Accessible Design Co.</title>
   </head>
   <body>
     <header>
-      <nav id="navbar" class="navbar open">
+      <nav id="navbar" class="navbar open" role="navigation">
         <ul>
-          <li class="company-name"><img src="./img/accessibility.png">&nbsp;ADC</li>
+          <li class="company-name">
+            <img
+              src="./img/accessibility.png"
+              alt="Two women seated around a laptop, one in a wheelchair." />&nbsp;ADC
+          </li>
           <li><a href="#hero">Home</a></li>
           <div class="nav-toggle">
             <li><a href="#about">About</a></li>
@@ -18,8 +27,8 @@
             <li><a href="#contact">Contact</a></li>
           </div>
         </ul>
-        <button id="hamburger-toggle" class="hamburger">
-          <div class="svg-wrap icon-open">
+        <button id="hamburger-toggle" class="hamburger" aria-label="Menu Toggle">
+          <div class="svg-wrap icon-open" id="icon-open">
             <div class="icon-open">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +47,7 @@
                 <path d="M4 18l16 0" />
               </svg>
             </div>
-            <div class="icon-close">
+            <div class="icon-close" id="icon-close">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -65,7 +74,7 @@
           </div> -->
           <div>
             <h1>Accessible Design Co.</h1>
-            <img src="./img/hero.jpg" alt="">
+            <img src="./img/hero.jpg" alt="" />
             <p class="prompt">
               Ready to take your accessible web projects to the next level?
             </p>
@@ -74,7 +83,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main role="main">
       <section id="about">
         <h2>About Us</h2>
         <p class="about-p justify">
@@ -97,7 +106,7 @@
       </section>
       <section id="services">
         <h2>Our Services</h2>
-        <div class="flex-container space-between">
+        <div id="services-grid" class="grid">
           <div class="services-card">
             <div class="services-icon">
               <img
@@ -132,8 +141,22 @@
             <div class="services-icon">
               <img class="center" src="./img/shop.png" alt="A storefront." />
             </div>
-
             <h3>Merchandise</h3>
+            <p class="justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              aliquam amet commodi dolores a dolorum cupiditate, labore aliquid
+              debitis itaque esse aspernatur laboriosam magni pariatur porro
+              officia. Rem, eligendi veniam?
+            </p>
+          </div>
+          <div class="services-card">
+            <div class="services-icon">
+              <img
+                class="center"
+                src="./img/support.png"
+                alt="A support person with a headset." />
+            </div>
+            <h3>Technical Support</h3>
             <p class="justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
               aliquam amet commodi dolores a dolorum cupiditate, labore aliquid
@@ -146,7 +169,7 @@
       <section id="contact">
         <h2>Contact Us</h2>
         <p class="center">We'd be delighted to hear from you.</p>
-        <form action="post">
+        <form action="post" role="form" netlify>
           <label for="name">Name:</label>
           <br />
           <input
@@ -174,7 +197,7 @@
             type="text"
             name="subject"
             id="subject"
-            placeholder="I'd like to schedule an appointment"
+            placeholder="I'd like to get in touch!"
             required />
           <br /><br />
           <label for="message">Message:</label>
@@ -182,7 +205,7 @@
           <textarea
             name="message"
             id="message"
-            placeholder="Hello! I'd like to book an appointment, please."
+            placeholder="Hello! I'd like to get in touch."
             required></textarea>
           <br />
           <fieldset class="newsletter">
@@ -207,7 +230,15 @@
       </section>
     </main>
     <footer>
-      <small>Copyright &copy; 2025 Accessible Design Co.</small>
+      <div class="social-icons">
+        <div class="social-icon">
+          <a href="#"><img src="./img/facebook-app-symbol.png" alt="Facebook symbol."></a>
+        </div>
+        <div class="social-icon">
+          <a href="#"><img src="./img/instagram.png" alt="Instagram symbol."></a>
+        </div>
+      </div>
+      <small>Copyright &copy; 2025 Accessible Design Co.<br />A subsidiary of Cult of Barboth, Ltd.</small>
     </footer>
     <script src="./static/js/app.js"></script>
   </body>

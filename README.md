@@ -4,6 +4,8 @@
 2025-RTT-30  
 <datetime date="2025-06-06">2025-06-06</date>  
 
+<img src="./img/hero.jpg" alt="Two women sitting around a laptop, one in a wheelchair.">
+
 ## Overview
 For this Skills-Based Assessment, you will demonstrate your ability to create a well-structured, responsive, and accessible web page using the HTML and CSS techniques you have learned. You will be assessed on your use of semantic HTML, CSS layout techniques (including Flexbox and Grid), and the implementation of accessibility features. ([Read complete instructions](https://ps-lms.vercel.app/curriculum/se/410/sba))
 
@@ -13,3 +15,6 @@ For this Skills-Based Assessment, you will demonstrate your ability to create a 
 - <a href="https://www.flaticon.com/free-icons/internet" title="internet icons">Internet icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by Bert Flint - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/shop" title="shop icons">Shop icons created by Gregor Cresnar - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/support" title="support icons">Support icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by Freepik - Flaticon</a>

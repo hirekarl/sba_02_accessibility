@@ -34,24 +34,7 @@ section {
 
 header {
     margin-bottom: 4em;
-    /* background-image: url("./img/hero_cropped.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-color: lightgray;
-    background-blend-mode: soft-light; */
-    /* padding-bottom: 4em; */
 }
-
-/* header {
-    min-height: 100vh;
-    background-image: url("./img/hero.jpg");
-    background-position: center center;
-    background-color: black;
-    background-blend-mode: screen;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-} */
 
 /* Navbar */
 
@@ -73,6 +56,7 @@ header {
 
 .navbar .nav-toggle {
     display: flex;
+    vertical-align: middle;
 }
 
 .navbar .company-name {
@@ -83,11 +67,13 @@ header {
     text-decoration: none;
     padding: 1em;
     color: inherit;
+    vertical-align: middle;
 }
 
 .navbar .company-name img {
     height: 1em;
     filter: invert(1);
+    vertical-align: middle;
 }
 
 .navbar a {
@@ -173,13 +159,13 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-style: italic;
     vertical-align: center;
     filter: drop-shadow(5px 5px 5px lightgray);
     padding: 0;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
 h3 {
@@ -206,18 +192,19 @@ h3 {
     background-color: green;
     color: #fffafa;
     font-weight: bold;
-    /* margin-top: 1em; */
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    border: none;
     border-radius: 10px;
     filter: drop-shadow(5px 5px 5px lightgray);
 }
 
 #lets-go:hover {
     background-color: yellowgreen;
-    color: darkgreen;
+    text-shadow: 2px 2px #263037;
+    font-style: italic;
 }
 
 /* Main */
@@ -240,13 +227,23 @@ h3 img {
 
 /* Services */
 
-/* .services-card {
+#services-grid {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+.services-card {
+    margin: 0 auto;
     background-color: #f2f8ff;
     filter: drop-shadow(5px 5px 5px lightgray);
-    height: 100%;
     padding: 1em;
-    margin: 1em;
-    border: 1px solid black;
+    border: 1px solid #263037;
     border-radius: 10px;
 }
 
@@ -263,7 +260,7 @@ h3 img {
 
 .services-card h3 {
     vertical-align: center;
-} */
+}
 
 /* Contact */
 
@@ -278,6 +275,12 @@ form {
     padding: 1em;
     border: 1px solid #263037;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        width: 100%;
+    }
 }
 
 fieldset {
@@ -297,6 +300,7 @@ legend {
 
 input[type=text], input[type=email], textarea {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     margin: 0 auto;
     border: 1px solid #263037;
     border-radius: 10px;
@@ -317,6 +321,12 @@ input[type=submit] {
     width: 100%;
 }
 
+input[type=radio] {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    transform: scale(1.5);
+}
+
 textarea {
     resize: none;
 }
@@ -335,4 +345,19 @@ footer {
     padding-bottom: 1em;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.social-icon img {
+    display: inline-block;
+    height: 1em;
+    filter: invert(1);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
