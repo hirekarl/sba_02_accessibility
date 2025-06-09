@@ -1,6 +1,5 @@
 body, html, header {
-    margin: 0 auto;
-    margin-top: 0;
+    margin: unset;
     padding-top: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #263037;
@@ -54,23 +53,117 @@ header {
     background-attachment: fixed;
 } */
 
-nav {
-    z-index: 100;
-    background-color: #f2f8ff;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Navbar */
+
+/* https://www.youtube.com/watch?v=FNXgsTFrD7U */
+
+.navbar {
+    background-color: #263037;
+    color:#fffafa;
     font-weight: bold;
+    position: relative;
 }
 
-nav ul {
+.navbar ul {
+    margin: unset;
+    padding: unset;
     list-style: none;
-    justify-content: space-around;
+    display: flex;
 }
+
+.navbar .nav-toggle {
+    display: flex;
+}
+
+.navbar .company-name {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; */
+    background-color: maroon;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    color: inherit;
+}
+
+.navbar .company-name img {
+    height: 1em;
+    filter: invert(1);
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    /* color: yellowgreen; */
+    background-color: #506473;
+}
+
+.navbar .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: unset;
+    background: unset;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .hamburger .svg-wrap {
+    height: 100%;
+    padding: 1em;
+}
+
+.navbar .hamburger .svg-wrap svg {
+    stroke: #fffafa;
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+
+.navbar .hamburger .svg-wrap .icon-close {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar.open ul {
+        display: block;
+    }
+
+    .navbar.open ul .nav-toggle {
+        display: block;
+    }
+
+    .navbar.open .company-name {
+        display: block;
+    }
+
+    .navbar.open a {
+        display: block;
+    }
+
+    .navbar ul .nav-toggle {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+
+    .navbar.open .hamburger .svg-wrap .icon-open {
+        display: none;
+    }
+
+    .navbar.open .hamburger .icon-close {
+        display: block;
+    }
+}
+
+/* Headings */
 
 h1, h2, h3 {
     color: #0e1214;
@@ -80,7 +173,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 4em;
     font-style: italic;
     vertical-align: center;
     filter: drop-shadow(5px 5px 5px lightgray);
@@ -111,9 +204,9 @@ h3 {
 #lets-go {
     font-size: 1.25em;
     background-color: green;
-    color: white;
+    color: #fffafa;
     font-weight: bold;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.5em;
@@ -123,7 +216,7 @@ h3 {
 }
 
 #lets-go:hover {
-    background-color: springgreen;
+    background-color: yellowgreen;
     color: darkgreen;
 }
 
@@ -147,7 +240,7 @@ h3 img {
 
 /* Services */
 
-.services-card {
+/* .services-card {
     background-color: #f2f8ff;
     filter: drop-shadow(5px 5px 5px lightgray);
     height: 100%;
@@ -170,7 +263,7 @@ h3 img {
 
 .services-card h3 {
     vertical-align: center;
-}
+} */
 
 /* Contact */
 
@@ -183,13 +276,13 @@ form {
     width: 75%;
     margin: 0 auto;
     padding: 1em;
-    border: 1px solid black;
+    border: 1px solid #263037;
     border-radius: 10px;
 }
 
 fieldset {
     background-color: #f2f8ff;
-    border: 1px solid black;
+    border: 1px solid #263037;
     border-radius: 10px;
     margin-top: 1em;
 }
@@ -205,7 +298,7 @@ legend {
 input[type=text], input[type=email], textarea {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid #263037;
     border-radius: 10px;
     width: 100%;
 }
@@ -219,7 +312,7 @@ input[type=submit] {
     margin: 0 auto;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
-    border: 1px solid black;
+    border: 1px solid #263037;
     border-radius: 10px;
     width: 100%;
 }
@@ -235,7 +328,8 @@ label {
 /* Footer */
 
 footer {
-    background-color: #f2f8ff;
+    background-color: #263037;
+    color: #fffafa;
     margin-top: 2em;
     padding-top: 1em;
     padding-bottom: 1em;
