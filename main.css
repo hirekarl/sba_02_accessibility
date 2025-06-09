@@ -64,8 +64,6 @@ header {
 }
 
 .navbar .company-name {
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold; */
     background-color: #000059;
     display: inline-block;
     text-decoration: none;
@@ -89,7 +87,6 @@ header {
 }
 
 .navbar a:hover {
-    /* color: yellowgreen; */
     background-color: #506473;
 }
 

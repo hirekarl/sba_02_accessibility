@@ -2,7 +2,7 @@
 
 [Karl Johnson](https://www.github.com/hirekarl)  
 2025-RTT-30  
-<datetime date="2025-06-06">2025-06-06</date>  
+<datetime date="2025-06-08">2025-06-08</date>  
 
 <img src="./img/hero.jpg" alt="Two women sitting around a laptop, one in a wheelchair.">
 
@@ -13,6 +13,7 @@ For this Skills-Based Assessment, you will demonstrate your ability to create a 
 `index.html` is deployed at [](). The form works.
 
 ## Attributions
+- Responsive navbar inspired by [Responsive navbar with mobile hamburger menu | HTML, CSS, JS](https://www.youtube.com/watch?v=FNXgsTFrD7U) by [Devistry](https://www.youtube.com/@Devistry)
 - Photo by Marcus Aurelius: https://www.pexels.com/photo/woman-in-red-sweater-wearing-black-framed-eyeglasses-sitting-on-wheelchair-4063789/
 - <a href="https://www.flaticon.com/free-icons/accessibility" title="accessibility icons">Accessibility icons created by Smashicons - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/internet" title="internet icons">Internet icons created by Freepik - Flaticon</a>
